@@ -25,8 +25,11 @@ $ clasp push
 $ clasp open
 ```
 
-### Set up editor
+### Set up development
 
 ```
 $ yarn install
+$ cp src/template.secrets.ts src/secrets.ts
+# rename _Secrets to Secrets
+$ vi src/secrets.ts
 ```
