@@ -29,6 +29,8 @@ $ clasp open
 
 ```
 $ yarn install
+$ npx husky install
+
 $ cp src/template.secrets.ts src/secrets.ts
 # rename _Secrets to Secrets
 $ vi src/secrets.ts

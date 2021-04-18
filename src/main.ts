@@ -1,3 +1,3 @@
 function main() {
-  Slack.post('Hello, GAS!')
+  Slack.post("Hello, GAS!");
 }
