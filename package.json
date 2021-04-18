@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "author": "hmiyado",
   "license": "MIT",
@@ -20,14 +21,9 @@
     "prettier": "^2.2.1"
   },
   "lint-staged": {
-    "*.ts": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "*.ts": 
+      "eslint --cache --fix"  ,
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md,ts}": "prettier --write"
   }
 }
