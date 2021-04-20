@@ -1,7 +1,8 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 namespace Slack {
   const webhook = Secrets.SLACK_INCOMING_WEBHOOK
 
-  export const post = (text: string) => {
+  export const post = (text: string): void => {
     const body = {
       text,
     }
